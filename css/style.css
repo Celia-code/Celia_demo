@@ -79,27 +79,22 @@
     font-size: 18px;
 }
 
-.banner-button button {
-    width: 110px;
-    height: 50px;
-    margin-right: 20px;
+.action button{
+    padding: 15px 40px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 10px;
     font-size: 16px;
-    border-radius: 30px;
-    background-color: #141420;
-    color: white;
-    border: 3px solid #4b23db;
-    font-weight: 600; 
-   
+    font-weight: 800;
+    outline: none;
+    border:none;
 }
-
-.banner-button .explore:hover,
-.banner-button .create:hover{
-    cursor: pointer;
-    background-color: #fff;
-    color: #4b23db;
-    font-weight: 600;
-
-    
+.action button:first-child{
+    background-color: #7366F0;
+}
+.action button:last-child{
+    background-color: #292B56;
+    color: #7366F0;
 }
 
 
