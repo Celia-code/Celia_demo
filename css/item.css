@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+.full{
+    width: 100%;
+    background-color: #161D30;
+    padding:160px 0 80px 0;
+}
+.wrap{
+    width: 86%;
+    margin: auto;
+    display: flex;
+
+}
+
+.itemPic{
+    width: 50%;
+    padding: 0 5px;
+}
+.itemPic img{
+    width: 636px;
+    height: 636px;
+    border-radius: 5px;
+}
+
+
+.itemContent{
+    width: 50%;
+    padding: 5px 5px 0px 35px;
+}
+.itemContent p{
+    color: #9FA4DD;
+    line-height: 22px;
+    font-weight: 600;
+}
+.itemContent h2{
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+.categories{
+    margin: 20px 0 20px;
+}
+.categories i{
+    padding: 8px 20px;
+    margin-right: 15px;
+    color: gray;
+    background-color: #202443;
+}
+.categories span{
+    padding-left: 10px;
+    color: #9FA4DD;
+    font-size: 14px;
+
+}
+
+
+.itemfrom {
+    display: flex;
+    margin: 30px 0;
+}
+h6{
+ font-size: 14px;
+ margin: 0 0 15px;
+ width: 100%;
+
+}
+.itemfrom p, .owner p{
+    color: #fff;
+}
+.itemfrom .creator{
+    margin-right:80px ;
+}
+.itemfrom .creator p::before, .collection p::before, .owner p::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-color: #fff;
+    background: url(../images/homepage/seller3.jfif)no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+}
+/* .itemfrom .creator p::before:hover, 
+.collection p::before:hover, 
+.owner p::before:hover{
+    border: 3px solid #7366F0;
+    transform: scale(2);
+} */
+.process button{
+    padding: 12px 15px;
+    margin: 10px 5px 30px 0;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    background-color: #292F45;
+    color: #686E7D;
+    font-weight: 800;
+}
+.process button:focus{
+    cursor: pointer;
+}
+.process button:active{
+    background-color: #232749;
+    color: #fff;
+}
+.properties{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.properties .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 35px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 2px solid #292F45;
+}
+.properties .items:hover{
+    background-color: rgb(41,43,86, .5)
+}
+
+.items span:first-child{
+    color: #7366F0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0px 20px;
+
+}
+.items span:nth-child(2){
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.items span:last-child{
+    color: #727272;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.price span{
+    font-size: 32px;
+    color: #7366F0;
+
+}
+.price span::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    /* margin-right: 10px; */
+    /* background-color: #fff; */
+    background: url(../images/common/ethereum.svg)no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+.price span::after{
+    content: '($253.67)';
+    color: #9FA4DD;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+.action button{
+    padding: 15px 40px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    outline: none;
+    border:none;
+}
+.action button:first-child{
+    background-color: #7366F0;
+}
+.action button:last-child{
+    background-color: #292B56;
+    color: #7366F0;
+}

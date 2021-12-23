@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.full{
+    width: 100%;
+    background: url(../images/common/common_banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+  /* section1 */
+  .login .wrap{
+      width: 1320px;
+      padding: 200px 0 150px 0;
+      display: flex;
+      align-items: center;
+  }
+  .login-left{
+      width: 770px;
+
+  }
+  .login-left h1, .login-left p{
+      width: 550px;
+      padding-left: 20px;
+      margin-bottom: 30px;
+  }
+  .login-left h1{
+      font-size: 50px;
+      line-height: 70px;
+  }
+  .login-left p{
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  .login-right{
+      width: 440px;
+      background-color: #21273E;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+  }
+  .login-right h3{
+      width: 330px;
+      font-size: 22px;
+      margin-bottom: 10px;
+  }
+  .login-right p{
+      width: 330px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #9FA4DD;
+      margin-bottom: 20px;
+      font-weight: 800;
+
+  }
+  .login-right .here{
+      color: #7366F0;
+  } 
+  .login-right input{
+      width: 336px;
+      height: 40px;
+      margin-bottom:20px;
+      background-color: transparent;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding-left: 10px;
+      color: gray;
+      font-weight: 800;
+      font-size: 14px;
+
+      
+  }
+  .login-right input:focus{
+    background-color: #282C4E;
+    outline: none;
+    border: 5px solid #36386D;
+  }
+  .login-right button{
+      width: 336px;
+      padding: 15px 0;
+      border-radius: 5px;
+      background-color: #7366F0;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom:20px;
+      font-size: 13px;
+
+
+  }
+  
+  .account a, .login-right p span{
+    font-size: 14px;
+    padding-right: 20px;
+    color:#7366F0;
+  }
+  .login-right p span{
+    color: #60658D;
+    
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/title-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .goTop {
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <navbar class="nav">
+        <div class="navbar-wrap">
+            <div class="logo">
+                <a href="index.html"><img src="images/common/logo.png" alt="" style="color: #fff;"></a>
+                <h1><a href="index.html">M-NFTs</a></h1>
+            </div>
+            <div class="search">
+                <input name="searchBox" class=" css-w3c6s0" type="text" placeholder="Search items here...">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a  href="item.html">Marketplace</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="create_main.html">Create</a></li>
+                    
+                </ul>
+            </div>
+            <div class="member">
+                <ul>
+                    <li>
+                        <a href="login.html">
+                            <img src="images/common/user.png" alt="">
+                        </a>
+                    </li>
+                    <li class="wallet">
+                        <a href="wallet.html">
+                        <img src="images/common/wallet.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+    
+    <!-- section1 -->
+    <section class="full">
+        <div class="login">
+            <div class="wrap">
+                <div class="login-left">
+                    <h1>Create, sell or collect<br>
+                        digital items.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua ut enim.</p>
+                </div>
+                <div class="login-right">
+                    <h3>Sign in</h3>
+                    <p>Login using an existing account or create a new account <a href="#" class="here">here</a>.</p>
+                    <input id="username" type="text" placeholder="username">
+                    <input id="password" type="password" placeholder="password">
+                    <button id="submit">Submit</button>
+                    <p class="account">
+                        <span>Login with:</span>
+                        <a href="#">Facebook</a>
+                        <a href="#">Google</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="goTop">
+        <button id="goTop">Top</button>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="wrap">
+            <div class="item marketPlace">
+                <h3>Marketplace</h3>
+                <ul>
+                    <li>All NFTs</li>
+                    <li>Art</li>
+                    <li>Music</li>
+                    <li>Domain Names</li>
+                    <li>Virtual Word</li>
+                    <li>Collectibles</li>
+                </ul>
+            </div>
+            <div class="item resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li>All NFTs</li>
+                    <li>Art</li>
+                    <li>Music</li>
+                    <li>Domain Names</li>
+                    <li>Virtual Word</li>
+                    <li>Collectibles</li>
+                </ul>
+            </div>
+            <div class="item community">
+                <h3>Community</h3>
+                <ul>
+                    <li>All NFTs</li>
+                    <li>Art</li>
+                    <li>Music</li>
+                    <li>Domain Names</li>
+                    <li>Virtual Word</li>
+                    <li>Collectibles</li>
+                </ul>
+            </div>
+            <div class="item newsletter">
+                <h3>Newsletter</h3>
+                <ul>
+                    <li>Signup for our newsletter to get the<br> latest news in your inbox.</li>
+                    <li><input type="text" value="enter your email"></li>
+                    <li><button>Send</button>
+                    </li>
+                    <li>Your email is safe with us. We don't spam.</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- copyright -->
+
+    <div class="copyright">
+        <div class="left">
+            <h2>M-NFTs<span>&reg;&nbsp;Copyright 2021-Tibame Celia</span></h2>
+
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-pinterest-square"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    const submit = document.getElementById('submit');
+    submit.onclick = (e) => {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        e.target.disabled = true;
+        e.target.style.backgroundColor = 'gray';
+
+        setTimeout(() => {
+            e.target.disabled = false;
+            e.target.style.backgroundColor = '';
+            alert("login secc")
+            window.location = 'index.html';
+        }, 2000);
+
+    }
+
+    const goTop = document.getElementById('goTop');
+    goTop.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const earthmove = (e) => {
+        const heigth = 0
+        // console.log(e)
+        if (heigth > 60) {
+            goTop.style.display = '';
+        } else {
+            goTop.style.display = 'none';
+        }
+    }
+    window.addEventListener('scroll', earthmove);
+
+
+</script>
+
+</html>

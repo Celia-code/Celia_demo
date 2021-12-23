@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.full{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161D30;
+}
+
+
+
+  /* section1 */
+  .page-title{
+    width: 100%;
+    height: 300px;
+    background: url(../images/common/common_banner.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 300px;
+  }
+  .page-title h1{
+      font-size: 50px;
+      text-align: center;
+      line-height: 300px;
+
+  }
+
+/* section2 */
+.wallet .wrap{
+    width: 1320px;
+    height: 588px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+.wallet .item{
+    width: 306px;
+    height: 264px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:20px 0 20px 30px;
+    border-radius: 20px ;
+    background-color: #1D2436;
+    box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 30%);  
+}
+.wallet .item:hover{
+    background-color: transparent;
+}
+.wallet .item h3{
+    width: 244px;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+}
+.wallet .item p{
+    width: 244px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #9FA4DD;
+}
+
+
+.wallet .item .popular:after{
+    content: 'Most Popular';
+    width: 120px;
+    /* height: 30px; */
+    background-color: #343A4A;
+    position: absolute;
+    top: -81px;
+    left: 115px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.wallet .item .simple:after{
+    content: 'Most simple';
+    width: 120px;
+    /* height: 30px; */
+    background-color: #343A4A;
+    position: absolute;
+    top: -81px;
+    left: 115px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}

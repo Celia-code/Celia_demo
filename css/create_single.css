@@ -1,0 +1,275 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.full{
+    width: 100%;
+      background-color: #161D30;
+    /* background-color:  */
+    /* background-color: #000; */
+}
+.wrap .left input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+.post{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40px;
+    max-height: 120px;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+    font-size: 14px;
+    color: gray;
+    border: 1px solid gray;
+    background-color: transparent; 
+}
+.wrap .left input:focus, 
+.post:focus{
+    background-color: #1F2443;
+    outline: none;
+    border: 5px solid #4C5069 ;
+}
+
+
+  /* section1 */
+  .page-title{
+      width: 100%;
+      background: url(../images/common/common_banner.jpg) no-repeat;
+      background-size: cover;
+      padding:50px 0 0 0 ;
+  }
+  .page-title h1{
+      font-size: 50px;
+      text-align: center;
+      line-height: 300px;
+
+  }
+
+  /*upLoad*/
+  .upLoad{
+      width: 1320px;
+      margin: 0 auto;
+
+  }
+  .upLoad .wrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .upLoad .wrap .left{
+      width: 770px;
+  }
+  /*left共用區*/
+
+  .upLoad .wrap .left h3{
+      width: 100%;
+      font-size: 18px;
+      padding: 5px 0;
+  }
+  
+  .upLoad .wrap .left .upload-file{
+      width: 100%;
+      border: 4px dashed #454A59;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 35px;
+      margin-top: 10px;
+  }
+  .upload_cover {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    background: #292F45;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    }
+    #upload_input {
+    display: none;
+    }
+    .upload_icon {
+    font-weight: bold;
+    font-size: 180%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 25%;
+    }
+    .delAvatar {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    }
+  .upLoad .wrap .left p{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.method{
+    width: 100%;
+    display: flex;
+}
+.method .item{
+    width: 140px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #292F45;
+}
+
+.method .item:hover{
+    border: 2px solid rgb(115,102,240);
+    background-color: transparent;
+    transform: scale(1.05);
+}
+.method .item .icon {
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.method .item .txt{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 800;
+    
+    padding-left: 28px;
+    position: relative;
+    right: 5%;
+    bottom: 10px;
+    margin:10px 0 22px 0;
+}
+.method .item .txt1{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 800;
+    padding-left: 28px; 
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+.wrap .left .price h3{
+    margin-top:50px ;
+}
+.wrap .left .unlock{
+   margin-top: 50px;
+   padding:10px 0 50px 10px;
+   border: 1px solid gray;
+   border-radius: 5px;
+
+}
+.wrap .left .unlock span{
+    color: #9FA4DD;
+    font-size: 15px;
+}
+.wrap .left button{
+    width: 150px;
+    margin: 30px 0 50px 0;
+    background-color: #7366F0;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 15px 0;
+
+}
+
+
+/*right*/
+
+  .upLoad .wrap .right{
+    width: 330px;
+    /* border: 2px solid blue; */
+    margin-left: 65px;
+}
+  .item-card{
+      width: 340px;
+      height: 471px;
+      /* border: 2px solid blue; */
+      margin: 15px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -10p;
+      background-color: #1F2443;
+      padding:0 20px;
+      border-radius: 10px;
+
+      /* background-color: gray; */
+  }
+  .item-card img{
+      margin-top: 32px;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+  }
+  .item-card p{
+      width: 100%;
+      position: relative;
+      background-color: #1F2443;
+
+  }
+  .item-card::before{
+      content: '';
+      background:url(/images/homepage/creator-nofacegirl.png) no-repeat;
+      width: 55px;
+      height: 54px;
+      border-radius: 50%;
+      position: absolute;
+      background-size: contain;
+      top: 507px;
+      left: 1019px;
+      /* z-index: 3; */
+  }
+  .item-card::after{
+    content: '30d 17h 56m 10s';
+    width: 133px;
+    height: 25px;
+    border: 3px solid #7366F0;
+    border-radius:800px;
+    background-color: #232749;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 800;
+    top: 519px;
+    right: 181px;
+    /* z-index: 3; */
+  }
+  .item-card p:nth-child(2){
+      font-size: 15px;
+      font-weight: 800;
+  }
+  .item-card p:nth-child(3){
+      color: #9FA4DD;
+      font-size: 14px;
+      font-weight: 800;
+
+  }
+  .item-card p:nth-child(4){
+      color: #7366F0;
+      font-size: 14px;
+      font-weight: 800;
+  }
+
+
+ 
