@@ -48,7 +48,7 @@
                 <ul>
                     <li>
                         <a href="login.html">
-                            <img src="images/common/user.png" alt="">
+                            <img src="images/common/user.png" alt="" id='icon'>
                         </a>
                     </li>
                     <li class="wallet">
@@ -180,39 +180,41 @@
 
 </body>
 <script>
-    const submit = document.getElementById('submit');
-    submit.onclick = (e) => {
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+    
+        
+        
+        function check(){
+            //拿到使用者輸入的帳密的值
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let icon = document.getElementById('icon');
+            console.log(icon)
+            
+            if(username == 'celia' && password == '1211'){
+                alert('Sucessful Login');
+                icon.src="images/homepage/seller7.png"
+                icon.style.borderRadius='50%';
+                location.replace('http://127.0.0.1:5500/index.html');
 
-        e.target.disabled = true;
-        e.target.style.backgroundColor = 'gray';
-
-        setTimeout(() => {
-            e.target.disabled = false;
-            e.target.style.backgroundColor = '';
-            alert("login secc")
-            window.location = 'index.html';
-        }, 2000);
-
-    }
-
-    const goTop = document.getElementById('goTop');
-    goTop.onclick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    const earthmove = (e) => {
-        const heigth = 0
-        // console.log(e)
-        if (heigth > 60) {
-            goTop.style.display = '';
-        } else {
-            goTop.style.display = 'none';
+            }else{
+                alert('Wrong username or password');
+                location.reload();
+            }
         }
-    }
-    window.addEventListener('scroll', earthmove);
 
+        //判斷帳號&密碼為celia&1211
+        //正確-
+        //1. 提示登入成功
+        //2. 將頭像換掉
+        //錯誤-提示錯誤訊息並重置頁面
+
+        //事件:使用者按下登入鍵, 執行
+        //拿到使用者按下的button
+        let submitBtn = document.getElementById('submit');
+        submitBtn.addEventListener('click', check);
+
+
+   
 
 </script>
 
