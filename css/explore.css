@@ -145,6 +145,9 @@
     position: relative;
     text-align: center;
 }
+.explore .wrap .none{
+    display: none;
+}
 .items .pic:hover img{
     transform: scale(1.05);
     transition: .3s;
@@ -203,6 +206,9 @@
 }
 .item-action a~i,span{
     color: gray;  
+}
+.item-action i:hover{
+    color: rgb(170, 6, 6);
 }
 
 h4~div{
