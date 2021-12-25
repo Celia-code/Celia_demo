@@ -18,11 +18,14 @@
 }
 .bsc-btn{
     background-color: gray;
-    width: 50px;
+    width: 42px;
     border-radius: 1200px;
     border: none;
     font-weight: 600;
+    font-size: 8px;
     /* display: none; */
+    position: relative;
+    left: -10px;
 }
 .special-style, .bsc{
     color: #ccc;
@@ -51,13 +54,11 @@
 .banner{
     display: flex;
     justify-content: center;
-    /* background-color: #161D30;
-     */
     background-image: linear-gradient(to left top, #0b0537, #251564, #4b1d92, #791fbf, #ae12eb);
     background-size: auto;
     background-position: right;
     color: white;
-    padding: 170px 0px;
+    padding: 170px 0px 145px 0;
 }
 .banner .wrap{
     width: 90%;
@@ -115,7 +116,7 @@
     height: 639px;
     position: absolute;
     right: -65px;
-    top: -310px;
+    top: -284px;
     border-radius: 10px;
     /* margin-left: 200px; */
     /* background-color: #141420; */
@@ -229,19 +230,19 @@
 .live-card{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid #000;
     border-radius: 30px;
     background-color: #353444;
-
+    padding-top: 10px;
 }
 .live-card .item{
     background-color: #353444;
 
 }
 .live-card .item img{
-    width: 320px;
-    height: 320px;
+    width: 290px;
+    height: 290px;
     margin: 10px;
     border-radius: 30px;
 }
@@ -254,10 +255,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
 }
 .creator .name p {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .live-card .item .creator img{
     width: 50px;
@@ -267,7 +268,7 @@
     /* border: 1px solid red; */
 }
 .live-card .item .creator .name{
-    margin-left: -55px;
+    margin-left: -64px;
     /* color: red; */
     /* border: 1px solid red; */
 }
@@ -276,7 +277,11 @@
     font-size: 8px;
     margin-bottom: 5px;
     margin-right: 5px;
+}
 
+.live-card .price{
+    position: relative;
+    left: -15px;
 }
 
 
@@ -340,24 +345,23 @@
 .pick-card{
     /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     /* border: 1px solid blue; */
     border-radius: 10px;
     background-color: #353444;
-    margin: 0;
-
+    /* margin: 0; */
+    padding-bottom: 10px;
 }
 .pick-card .item{
     background-color: #353444;
     padding-top: 15px;
 }
 .pick-card .item img{
-    width: 320px;
-    height: 320px;
+    width: 291px;
+    height: 290px;
     margin: 10px;
     border-radius: 30px;
-
 }
 .pick-card .item-name{
     display: flex;
@@ -372,6 +376,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    left: -8px;
 }
 .pick-card .item .creator img{
     width: 50px;
@@ -530,7 +536,7 @@
     padding-top: 50px;
 }
 .section5 .item{
-    width: 25%;
+    width: 22%;
     padding: 15px;
     /* border: 1px solid red; */
     text-align: center;
