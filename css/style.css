@@ -98,9 +98,6 @@
 }
 
 
-
-
-
 .banner-right{
     display: flex;
     justify-content: flex-end;
@@ -125,6 +122,81 @@
         transform:scale(.85);
       }
   
+
+/* 右側選單 */
+.asideMenu {
+    height: 50px;
+    background-color: rgba(54, 52, 54, 0.9);
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    right: -220px;
+    border-left: 5px solid #7366F0;
+    padding: 20px;
+    box-shadow: 0 0 5px hsla(240, 40%, 15%, 0.5);
+    transform: translateX(0);
+    transition: all 0.5s;
+    letter-spacing: 1px;
+  }
+.asideMenu .btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.asideMenu .btn:active{
+    opacity: 0;
+}
+.asideMenu:active{
+    transform: translateX(-200px);
+    height: 460px;
+}
+.asideMenu .title p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+.asideMenu .title, .list ul{
+    position: relative;
+    left: 2px;
+    padding: 5px 20px 5px 10px ;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.asideMenu .list ul li:nth-of-type(odd){
+    color: #fff;
+    font-weight: 800;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+
+}
+.red{
+    color: red;
+    font-weight: 800;
+
+}
+.green{
+    color:green;
+    font-weight: 800;
+
+}
+
+.asideMenu .list ul li:nth-child(even){
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #7366F0;
+
+}
 
 /*Section1*/
 
@@ -246,41 +318,7 @@
     justify-content: space-between;
     position: relative;
 }
-/* .seller::before{
-    content:'<';
-    text-align: center;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
-    background-color: #000;
-    border: 2px solid gray;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 800;
-    color: #fff;
-    position: absolute;
-    top: 50px;
-    left: -50px;
-    box-shadow:0 0 20px 10px rgb(20,20,32);
-    
-} */
-/* .seller::after{
-    content:'>';
-    text-align: center;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
-    background-color: #000;
-    border: 2px solid gray;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 800;
-    color: #fff;
-    position: absolute;
-    top: 50px;
-    right: -50px;
-    
-} */
+
 .section2 .seller .item{
     padding: 12px;
     text-align: center;
