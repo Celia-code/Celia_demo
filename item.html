@@ -55,7 +55,12 @@
     <div class="full">
         <div class="wrap">
             <div class="itemPic">
-                <img src="images/item/itemPicjpg.jpg">
+                <img src="images/collections/itemPicjpg.jpg" id="large">
+                <div class="process">
+                    <button>Details</button>
+                    <button>Bids</button>
+                    <button>History</button>
+                </div>
             </div>
             <div class="itemContent">
                 <p>Auctions ends in </p>
@@ -66,10 +71,6 @@
                     <i class="fas fa-eye"><span>250</span></i>
                     <i class="fas fa-heart"><span>11</span></i>
                 </div>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-                </p>
 
                 <div class="itemfrom">
                     <div class="creator">
@@ -77,66 +78,58 @@
                         <a href="#"><p>lorem picum</p></a>
                     </div>
                     <div class="collection">
-                        <h6>Creator</h6>
+                        <h6>Owner</h6>
                         <a href="#"><p>lorem picum</p></a>
                     </div>
                 </div>
 
-                <div class="process">
-                    <button>Details</button>
-                    <button>Bids</button>
-                    <button>History</button>
-                </div>
+                
 
                 <div class="processDetails">
-                    <div class="owner">
-                        <h6>owner</h6>
-                        <a href="#"><p>Stacy Long</p></a>
-                    </div>
                     <div class="properties">
-                        <h6>properties</h6>
+                        <h6>Collections</h6>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
                         <div class="items">
-                            <span>Background</span>
+                            <span>Featured</span>
                             <span>Yellowish Sky</span>
                             <span>85% have this trait</span>
                         </div>
@@ -144,7 +137,7 @@
                     </div>
                     <div class="price">
                         <h6>price</h6>
-                        <span>0.059</span>
+                        <span id="price">0.059</span>
                     </div>
                     <div class="action">
                         <button>Buy Now</button>
@@ -237,10 +230,40 @@
             </li>
         </ul>
     </div>
+    <img src="images/collections/item1.jpg" alt="">
+    <img src="images/collections/" alt="">
     
+    <script>
+        let large = document.getElementById('large');
+        let num = document.getElementById('price')
 
-    <!-- section2 -->
-    
+        let img = ['images/collections/item1.jpg', 'images/collections/item2.jpg', 'images/collections/item3.jpg', 'images/collections/item4.jpg', 'images/collections/item5.jpg', 'images/collections/item6.jpg', 'images/collections/item7.jpg', 'images/collections/item8.jpg', 'images/collections/item9.jpg']
+        
+        let price = ['0.059', '0.089', '0.045', '0.069', '0.089', '0.025', '0.099', '0.039', '0.015']
+
+        
+        function init(){
+            let items = document.querySelectorAll('.properties .items');
+            for(let i=0;i<items.length;i++){
+                items[i].addEventListener('click', changeContent);
+                function changeContent(){
+                    large.src = img[i];
+                    num.innerText= price [i];
+                    }
+                }
+            }
+        
+
+        window.addEventListener('load', init, false)
+        
+
+
+        //事件
+        
+
+
+
+    </script>    
 
 
 

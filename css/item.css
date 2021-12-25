@@ -5,7 +5,7 @@
 .full{
     width: 100%;
     background-color: #161D30;
-    padding:160px 0 80px 0;
+    padding:180px 0 80px 0;
 }
 .wrap{
     width: 86%;
@@ -19,8 +19,8 @@
     padding: 0 5px;
 }
 .itemPic img{
-    width: 636px;
-    height: 636px;
+    width: 580px;
+    height: 640px;
     border-radius: 5px;
 }
 
@@ -71,20 +71,36 @@ h6{
 .itemfrom .creator{
     margin-right:80px ;
 }
-.itemfrom .creator p::before, .collection p::before, .owner p::before{
+.itemfrom .creator p::before, .collection p::before{
     content: '';
     width: 50px;
     height: 50px;
     border-radius: 50px;
     margin-right: 10px;
     background-color: #fff;
-    background: url(../images/homepage/seller3.jfif)no-repeat;
+    background: url(../images/homepage/seller2.jfif)no-repeat;
     background-size: contain;
     display: inline-block;
     position: relative;
     vertical-align: middle;
     top: 0;
     left: 0;
+}
+.collection p::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-color: #fff;
+    background: url(../images/homepage/seller4.jpg)no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+
 }
 /* .itemfrom .creator p::before:hover, 
 .collection p::before:hover, 
@@ -101,6 +117,7 @@ h6{
     background-color: #292F45;
     color: #686E7D;
     font-weight: 800;
+   
 }
 .process button:focus{
     cursor: pointer;
@@ -166,7 +183,7 @@ h6{
     top: 5px;
     left: 0;
 }
-.price span::after{
+/* .price span::after{
     content: '($253.67)';
     color: #9FA4DD;
     font-size: 16px;
@@ -174,7 +191,7 @@ h6{
     position: relative;
     top: -5px;
     left: 10px;
-}
+} */
 .action button{
     padding: 15px 40px;
     margin-top: 20px;
