@@ -35,8 +35,8 @@
     padding-left: 14px;
 }
 .gradient-style{
-    background: linear-gradient(to top, #3a1c71, #4e45c5, #ffaf7b);
-    background: -webkit-linear-gradient(to top, #3a1c71, #4e45c5, #ffaf7b);
+    background:linear-gradient(to left top, #0b0537, #251564, #4b1d92, #791fbf, #ae12eb);
+    background: -webkit-linear-gradient(to left top, #0b0537, #251564, #4b1d92, #791fbf, #ae12eb);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -50,10 +50,14 @@
 
 .banner{
     display: flex;
-    justify-content: center;    
-    background-color: #141420;
+    justify-content: center;
+    /* background-color: #161D30;
+     */
+    background-image: linear-gradient(to left top, #0b0537, #251564, #4b1d92, #791fbf, #ae12eb);
+    background-size: auto;
+    background-position: right;
     color: white;
-    padding-top: 170px;
+    padding: 170px 0px;
 }
 .banner .wrap{
     width: 90%;
@@ -63,17 +67,18 @@
 }
 .banner-left{
     width: 55%;
-    padding-left: 50px;
-    /* border: 1px solid green; */
 }
 .slogan{
     /* border: 1px solid green; */
     margin-bottom: 150px;
 }
 .banner-left h1{
-    font-size: 50px;
+    font-size: 55px;
     line-height: 70px;
     margin-bottom: 30px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Volkhov', serif;
 }
 .banner-left p{
     font-size: 18px;
@@ -81,7 +86,6 @@
 
 .action button{
     padding: 15px 40px;
-    margin-top: 20px;
     margin-right: 15px;
     border-radius: 10px;
     font-size: 16px;
@@ -107,20 +111,18 @@
     /* border: 1px solid green; */
     /* width: 90%;
     height: 90%; */
-    width: 670px;
-    height: 554px;
+    width: 767px;
+    height: 639px;
     position: absolute;
     right: -65px;
-    top: -283px;
+    top: -310px;
     border-radius: 10px;
-
     /* margin-left: 200px; */
-
-    background-color: #141420;
-    box-shadow:0 0 20px 10px rgb(20,20,32);
-        -webkit-transform:scale(.85);
-        transform:scale(.85);
-      }
+    /* background-color: #141420; */
+    /* box-shadow:0 0 20px 10px rgb(20,20,32); */
+    -webkit-transform:scale(.85);
+    transform:scale(.85);
+    }
   
 
 /* 右側選單 */
@@ -130,7 +132,7 @@
     position: fixed;
     z-index: 100;
     top: 100px;
-    right: -220px;
+    right: -170px;
     border-left: 5px solid #7366F0;
     padding: 20px;
     box-shadow: 0 0 5px hsla(240, 40%, 15%, 0.5);
@@ -156,11 +158,11 @@
     opacity: 0;
 }
 .asideMenu:active{
-    transform: translateX(-200px);
-    height: 460px;
+    transform: translateX(-170px);
+    height: 400px;
 }
 .asideMenu .title p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 800;
     color: #fff;
 }
@@ -169,7 +171,7 @@
     left: 2px;
     padding: 5px 20px 5px 10px ;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
 }
 
 .asideMenu .list ul li:nth-of-type(odd){
@@ -178,6 +180,9 @@
     border-top: 1px solid gray;
     padding-top: 10px;
 
+}
+.asideMenu .optionTitle span{
+    padding-left: 10px;
 }
 .red{
     color: red;
@@ -191,7 +196,7 @@
 }
 
 .asideMenu .list ul li:nth-child(even){
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 10px;
     font-weight: 800;
     color: #7366F0;
@@ -204,12 +209,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #141420;
+    background-color: #161D30;
 
 }
 .section1 .wrap{
-    padding-top: 100px;
-    
+    padding-top: 30px;
 }
 .s1-title, .s3-title, .s4-title, .s5-title{
     width: 100%;
@@ -282,7 +286,7 @@
     display: flex;
     justify-content: center;
     padding: 30px 0;
-    background-color: #141420;
+    background-color: #161D30;
     padding: 80px 0;
 
 }
@@ -454,6 +458,7 @@
 .content .collection .collection-cat{
     font-size: 20px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .content .collection span{
     margin-right: 10px;
@@ -507,7 +512,7 @@
 .section5{
     display: flex;
     justify-content: center;
-    background-color: #141420;
+    background-color: #161D30;
     padding: 0px 0 130px 0;
     position: relative;
 }
