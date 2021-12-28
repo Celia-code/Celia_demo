@@ -90,11 +90,13 @@
     font-weight: 800;
     outline: none;
     border:none;
+    cursor: pointer;
 }
-.action button:first-child{
+.action .cr_btn{
     background-color: #7366F0;
+    color: #fff;
 }
-.action button:last-child{
+.action .ex_btn{
     background-color: #292B56;
     color: #7366F0;
 }
@@ -144,6 +146,7 @@
     outline: none;
     font-size: 16px;
     color: #000;
+    cursor: pointer;
 }
 
 .asideMenu .btn:active{
