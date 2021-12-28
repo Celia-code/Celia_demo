@@ -81,7 +81,11 @@
 .banner-left p{
     font-size: 18px;
 }
-
+.action {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
 .action button{
     padding: 15px 40px;
     margin-right: 15px;
